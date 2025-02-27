@@ -16,7 +16,7 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
         write_only=True, required=True, validators=[utils.validate_password]
     )
     password2 = serializers.CharField(write_only=True, required=True)
-    skills = serializers.ListField(child=serializers.CharField())
+    skills = serializers.ListField(child=serializers.CharField(), required=False)
 
     class Meta:
         model = UserAccount
