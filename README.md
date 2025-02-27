@@ -12,7 +12,7 @@ This is a Django Rest Framework (DRF) API for managing job applications, job rec
 
 ### Prerequisites
 - Python 3.8+
-- PostgreSQL (or another supported database)
+- PostgreSQL (or any other relational database of your choice)
 
 ### Setup
 1. Clone the repository:
