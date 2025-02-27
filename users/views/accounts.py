@@ -40,7 +40,7 @@ class UserAccountViewSet(viewsets.GenericViewSet):
         email = serializer.validated_data.get("email")
         first_name = serializer.validated_data["first_name"]
         last_name = serializer.validated_data["last_name"]
-        skills = serializer.validated_data.get("skills", None)
+        skills = serializer.validated_data["skills"]
 
         serializer.save()
 
