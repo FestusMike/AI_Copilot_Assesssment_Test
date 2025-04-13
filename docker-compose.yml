@@ -10,7 +10,7 @@ services:
     env_file:
       - .env
     ports:
-      - "8000:8000"
+      - "3000:3000"
     volumes:
       - .:/copilot
     entrypoint: ["sh", "-c", "chmod +x /copilot/.docker/entrypoint.sh && /copilot/.docker/entrypoint.sh"]
